@@ -6,24 +6,24 @@ class Spaceship extends Floater
       corners=4;
       xCorners= new int[corners];
       yCorners= new int[corners];
-      xCorners[0]=10;
-      yCorners[0]=0;
-      xCorners[1]=-7;
-      yCorners[1]=-8;
-      xCorners[2]=-4;
-      yCorners[2]=0;
-      xCorners[3]=-7;
-      xCorners[3]=8;
+      xCorners[0]=-7;
+      yCorners[0]=-8;
+      xCorners[1]=10;
+      yCorners[1]=0;
+      xCorners[2]=-7;
+      yCorners[2]=8;
+      xCorners[3]=-4;
+      xCorners[3]=0;
       myCenterX=150;
       myCenterY=150;
-      myDirectionX=myCenterX;
-      myDirectionY=myCenterY;
+      myDirectionX=0;
+      myDirectionY=0;
       myPointDirection=(PI*2*Math.random());
     }
-      public void setX(int x){myCenterX=x;}
-      public int getX(){return myCenterX;}   
+      public void setX(int x){myCenterX=x+1;}
+      public int getX(){return (int)myCenterX;}   
       public void setY(int y){myCenterY=y;}
-      public int getY(){return myCenterY;} 
+      public int getY(){return (int)myCenterY;} 
       public void setDirectionX(double x){myDirectionX=x;}
       public double getDirectionX(){return myDirectionX;}
       public void setDirectionY(double y){myDirectionY=y;}
