@@ -13,7 +13,7 @@ class Spaceship extends Floater
       xCorners[2]=-7;
       yCorners[2]=8;
       xCorners[3]=-4;
-      xCorners[3]=0;
+      yCorners[3]=0;
       myCenterX=250;
       myCenterY=250;
       myDirectionX=0;
