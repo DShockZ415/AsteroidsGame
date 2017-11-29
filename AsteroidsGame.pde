@@ -1,7 +1,7 @@
  //your variable declarations here
 Stars[] star= new Stars[100];
 Spaceship lel= new Spaceship();
-Asteroid[] kek= new Asteroid[5];
+ArrayList<Asteroid> kek= new ArrayList<>();
 public void setup() 
 {
   size(500,500);
