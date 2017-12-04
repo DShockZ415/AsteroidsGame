@@ -1,7 +1,7 @@
  //your variable declarations here
 Stars[] star= new Stars[100];
 Spaceship lel= new Spaceship();
-ArrayList<Asteroid> kek= new ArrayList<>();
+ArrayList<Asteroid> kek= new ArrayList<Asteroid>();
 public void setup() 
 {
   size(500,500);
@@ -10,9 +10,11 @@ public void setup()
   {
     star[i]=new Stars();
   }
-  for(int i=0;i<kek.length;i++)
+  for(int i=0;i<kek.size();i++)
   {
-    kek[i]=new Asteroid();
+    double d= dist(lel.getX(),lel.getY(),kek.get(i).getX(),kek.get(i).getX());
+    if(d<10)
+    kek.remove(i);
   }
 }
 public void keyTyped()
@@ -46,10 +48,10 @@ public void draw()
   {
     star[i].show();
   }
-  for(int i=0;i<kek.length;i++)
+  for(int i=0;i<kek.size();i++)
   {
-    kek[i].show();
-    kek[i].move();
+    kek.show();
+    kek.move();
   }
   lel.move();
   lel.show();
