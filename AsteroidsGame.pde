@@ -10,11 +10,15 @@ public void setup()
   {
     star[i]=new Stars();
   }
-  for(int i=0;i<kek.size();i++)
+  for(int i=0;i<5;i++)
   {
-    double d= dist(lel.getX(),lel.getY(),kek.get(i).getX(),kek.get(i).getX());
+    kek.add(i, new Asteroid());
+  }
+  for(int a=0;a<kek.size();a++)
+  {
+    double d= dist(lel.getX(),lel.getY(),kek.get(a).getX(),kek.get(a).getY());
     if(d<10)
-    kek.remove(i);
+    kek.remove(a);
   }
 }
 public void keyTyped()
@@ -50,8 +54,8 @@ public void draw()
   }
   for(int i=0;i<kek.size();i++)
   {
-    kek.show();
-    kek.move();
+    kek.get(i).show();
+    kek.get(i).move();
   }
   lel.move();
   lel.show();
