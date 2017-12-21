@@ -43,4 +43,11 @@ class Asteroid extends Floater
     turn(rotSpeed);
     super.move();
   }
+<<<<<<< HEAD
 }
+=======
+}
+    
+
+    
+>>>>>>> f4e9ef418a2624f7e3a2a1b44296e403d39ed01e

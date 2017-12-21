@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 Stars[] star= new Stars[100];
 Spaceship lel= new Spaceship();
 ArrayList<Asteroid> kek= new ArrayList<Asteroid>();
 ArrayList<Bullet> lul= new ArrayList<Bullet>();
 int lulColor;
+=======
+ //your variable declarations here
+Stars[] star= new Stars[100];
+Spaceship lel= new Spaceship();
+ArrayList<Asteroid> kek= new ArrayList<Asteroid>();
+>>>>>>> f4e9ef418a2624f7e3a2a1b44296e403d39ed01e
 public void setup() 
 {
   size(500,500);
@@ -33,6 +40,7 @@ public void keyTyped()
   if(key=='a'||key=='A')
   {
     lel.turn(-13);
+<<<<<<< HEAD
   }
   if(key=='w'||key=='W')
   {
@@ -41,7 +49,14 @@ public void keyTyped()
   if (key=='k'||key=='K') {
     lulColor=color(255,0,0);
     lul.add(new Bullet());
+=======
+>>>>>>> f4e9ef418a2624f7e3a2a1b44296e403d39ed01e
   }
+  if(key=='w'||key=='W')
+  {
+    lel.accelerate(.7);
+  }
+
 }
 public void draw() 
 {
@@ -55,6 +70,7 @@ public void draw()
     kek.get(i).show();
     kek.get(i).move();
   }
+<<<<<<< HEAD
   for(int a=0;a<kek.size();a++)
   {
     double d= dist(lel.getX(),lel.getY(),kek.get(a).getX(),kek.get(a).getY());
@@ -76,6 +92,14 @@ public void draw()
       }
     }
 }
+=======
+    for(int a=0;a<kek.size();a++)
+  {
+    double d= dist(lel.getX(),lel.getY(),kek.get(a).getX(),kek.get(a).getY());
+    if(d<10)
+    kek.remove(a);
+  }
+>>>>>>> f4e9ef418a2624f7e3a2a1b44296e403d39ed01e
   lel.move();
   lel.show();
 }
